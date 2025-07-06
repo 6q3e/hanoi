@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ハノイの塔</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>ハノイの塔</h1>
+    <button id="langToggleBtn">EN</button>
+    <button id="undoBtn" style="position: absolute; top: 70px; right: 30px;">1つもどる</button>
+    <div id="messageBox"></div>
+    <div id="counter" style="position: absolute; top: 20px; right: 30px;">
+        移動回数: <span id="moveCount">0</span>
+    </div>
+    <button id="resetBtn" style="position: absolute; top: 120px; right: 30px;">リセット</button>
+    <div id="game">
+        <div class="peg" id="pegA" data-name="A"></div>
+        <div class="peg" id="pegB" data-name="B"></div>
+        <div class="peg" id="pegC" data-name="C"></div>
+    </div>
+    <script src="main.js"></script>
+    <div id="description"
+        style="margin-top: 50px; padding: 20px; background-color: #fdfdfd; border-top: 1px solid #ccc;">
+        板を操作して、一番右へ同じ形になるように移そう<br>
+        ただし、小さい板の上に大きな板はおけないよ
+    </div>
+</body>
+
+</html>
